@@ -1,5 +1,7 @@
 # VisIT-Bench: A Dynamic Benchmark for Evaluating Instruction-Following Vision-and-Language Models
 
+[[Paper]](https://arxiv.org/abs/2308.06595) [[Code]](https://github.com/mlfoundations/VisIT-Bench/) [[Dataset]](https://huggingface.co/datasets/mlfoundations/VisIT-Bench) [[Leaderboard]](https://huggingface.co/spaces/mlfoundations/VisIT-Bench-Leaderboard)
+
 This repository contains the official implementation and data for "VisIT-Bench: A Dynamic Benchmark for Evaluating Instruction-Following Vision-and-Language Models". The paper was authored by Yonatan Bitton, Hritik Bansal, Jack Hessel, Rulin Shao, Wanrong Zhu, Anas Awadalla, Josh Gardner, Rohan Taori, and Ludwig Schimdt.
 
 ![Alt text](fig1.png)
@@ -45,3 +47,16 @@ We provide the code for most of the instruction-following vision-language models
 ## License
 The new contributions of our dataset (e.g., the instructions, reference outputs, model ranking annotations, etc.) are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
 For the images that were used, please refer to the public license attached to each individual image in the "public_images_metadata" field in the dataset sheets.
+
+## Citation
+```
+@misc{bitton2023visitbench,
+      title={VisIT-Bench: A Benchmark for Vision-Language Instruction Following Inspired by Real-World Use}, 
+      author={Yonatan Bitton and Hritik Bansal and Jack Hessel and Rulin Shao and Wanrong Zhu and Anas Awadalla and Josh Gardner and Rohan Taori and Ludwig Schimdt},
+      year={2023},
+      eprint={2308.06595},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+Users of VisIT-Bench should also cite the original datasets.
