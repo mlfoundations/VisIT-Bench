@@ -1,4 +1,4 @@
-# VisIT-Bench: A Dynamic Benchmark for Evaluating Instruction-Following Vision-and-Language Models
+# VisIT-Bench: A Benchmark for Vision-Language Instruction Following Inspired by Real-World Use
 
 [[Paper]](https://arxiv.org/abs/2308.06595) [[Code]](https://github.com/mlfoundations/VisIT-Bench/) [[Dataset]](https://huggingface.co/datasets/mlfoundations/VisIT-Bench) [[Leaderboard]](https://huggingface.co/spaces/mlfoundations/VisIT-Bench-Leaderboard)
 
