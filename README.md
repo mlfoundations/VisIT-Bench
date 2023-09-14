@@ -49,6 +49,23 @@ The link to our public leaderboard is present [here](https://visit-bench.github.
 7. You will receive a confirmation email as soon as your model has been added to the leaderboard.
 8. Estimated time from Step 4-7 would be 1-2 weeks, however, we will try to work on your prediction files as soon as they are sent. 
 
+## More information about the leaderboard's judgment process
+
+While the leaderboard gives the elo ratings and the win-rate-against reference according to the prompted GPT-4 based metric, when you submit to the leaderboard, we will provide a copy of GPT-4's outputs when your model's predictions have been pitted against other models already in the database. Specifically, you will be given a `jsonl` file; each line in the jsonl represents a head-to-head battle between your model's outputs and another model's outputs. These were the battles that went into the elo calculation for the leaderboard. Here is an explanation of the fields:
+
+* `A_model`: which model corresponds to the prediction in `A`
+* `B_model`: which model corresponds to the prediction in `B`
+* `A`: the prediction of `A_model`
+* `B`: the prediction of `B_model`
+* `image_url`: the url of the image
+* `instruction`: the instruction to accompany the url of the image
+* `instruction_category`: the Visit Bench category of the instruction
+* `engine`: the engine that generated the judgement, which is always GPT-4 for the leaderboard.
+* `evaluated_with_reference`: whether or not the engine was given access to the human-authored reference for judgements (always false, see the paper for reference-free vs. reference-backed comparison)
+* `auto_evaluation_result`: a list of length 2 corresponding to the winner according to the engine for the two queries made(we run A B and B A to control for ordering biases)
+* `auto_evaluation_cot`: a list of length 2 corresponding to the chain of thought outputs of engine when presented with the instruction, image description, and the two choices. Because we run in both orderings (i.e., in one case, your model was presented as "A" and in another case your model was presented second as "B") we also provide `A/B_model_in_cot` which gives the reference that the engine may refer to in that particular chain of thought
+
+The way we calculate elo is to aggregate the two judgements of the engine. Most of the time, the engine does make a definitive prediction of "A" or "B", but it can also output "Tie" on occasion, i.e., it can refuse to answer. To determine a final winner for the battle, we total the number of times the engine judged one or the other to have won between the two queries. If one of the models won more than the other we count it as a win. Else, we count it as a tie.
 
 ## Baselines 
 
