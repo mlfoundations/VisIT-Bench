@@ -23,6 +23,8 @@ The dataset consists of 679 instances and 1,578 images, spanning a variety of re
 - [VisIT-Bench Sheet](https://docs.google.com/spreadsheets/d/1hi8rGXf2WYufkFvGJ2MZ92JNChliM1QEJwZxNboUFlE/edit?usp=sharing)
 - [VisIT-Bench Sheet Multi-Images](https://docs.google.com/spreadsheets/d/1IgCjJEd_obCawo1rWYfRZ_J7eiHP_68db5_OaNchKL0/edit?usp=sharing)
 
+To focus the single-image evaluations on the leaderboard, we've released the full multi-image dataset. This includes instruction-driven captions and human-reviewed GPT4 responses in `visit_bench_multi_images.csv`.
+
 ### Human Preference Annotations
 We are also publishing the human preference annotations in a CSV format, available in [VisIT-Bench Human Preferences](https://github.com/mlfoundations/VisIT-Bench/blob/main/visit_bench_human_preferences.csv).
 
