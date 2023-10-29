@@ -49,7 +49,9 @@ The link to our public leaderboard is present [here](https://visit-bench.github.
 5. We will use our internal prompting sandbox with reference-free GPT-4 as an evaluator.
 6. We will add your model to the leaderboard once we receive all the pairwise judgments from the sandbox.  
 7. You will receive a confirmation email as soon as your model has been added to the leaderboard.
-8. Estimated time from Step 4-7 would be 1-2 weeks, however, we will try to work on your prediction files as soon as they are sent. 
+8. Estimated time from Step 4-7 would be 1-2 weeks, however, we will try to work on your prediction files as soon as they are sent.
+
+Please include in your email 1) a name for your model, 2) your team name (including your affiliation), and optionally, 3) a github repo or paper link.
 
 ## More information about the leaderboard's judgment process
 
